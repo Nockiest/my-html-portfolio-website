@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andews Life</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BB5LXZZPL1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-BB5LXZZPL1');
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Andrew Lukes</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img
+        src="https://i.postimg.cc/L601592S/20220414-111812.jpg"
+        alt="This is me"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Javascript</h3>
+          <p>
+            The frist time we got to code our own school canteneens websitee
+            during our IT lesson, I fell in love with the world of computers. My
+            website was nothing outsanding honestly, but it didn't discourage
+            me. Now it is over a year and I have moved quite a lot on my journey
+            to become a competent web dev.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Food Styling</h3>
+          <p>
+            As runner I have a great energy expenditure, that I have to
+            compensate for using the contents os our fridge. Because it is hard
+            to eat such quantities of food, I was forced by the circumstances to
+            make some quality food. I am keeping up a breakfast channel, where I
+            upload my breakfasts in weekly intervals
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Languages</h3>
+          <p>
+            I have a passion for learning languages. It always broadens my
+            worldview and allows me to interact with more connent, such as
+            books, videos or music. I can comunicate in czech, english, german
+            and a bit in french and spanish. If you want to communicate with me
+            through these languages, I am fine with it.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Student, coder and a runner
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Besides coding, I also have a passion for food styling. I love to
+          create beautiful dishes and share them with others. In my free time,
+          you can often find me in the kitchen experimenting with new recipes or
+          taking pictures of my creations.
+        </p>
+        <p>
+          In addition to my hobbies, I also love cats, big breakfasts, books,
+          strategy videogames, and learning foreign languages. I believe that
+          learning languages is not only useful but also a great way to connect
+          with people from different cultures. I'm excited to see where my
+          interests in coding and food styling take me in the future, and I hope
+          to continue learning and exploring new things along the way.
+        </p>
+      </div>
+
+      <img
+        src="https://i.postimg.cc/xCtDwgBm/test.png"
+        alt="Andrew in his coding hideout"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a
+          href="https://codepen.io/Nockiest/pen/poOoaod"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/brvKhb0k/Akv-rkosn-mek.png"
+            alt="Akvarium"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a
+          href="https://codepen.io/Nockiest/pen/OJwMXeP"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/vZzSvy1D/V-st-i-ek-lov-enezlobse.png"
+            alt="Člověče Nezlob se"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a
+          href="https://codepen.io/Nockiest/pen/yLKWWvm"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/DyN9XnXh/klika-kasn-mek.png"
+            alt="ClickerGame"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a
+          href="https://codepen.io/Nockiest/pen/ExeVgJX"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/ZK2XGWWv/hodinyv-st-i-ek.png"
+            alt="Mechanical clock"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a
+          href="https://codepen.io/Nockiest/pen/zYJaNOb"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/g2h1mGhS/achysn-mek.png"
+            alt="ChessClone"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a
+          href="https://codepen.io/Nockiest/pen/XWqKavw"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/gknftV2P/Kalkula-kasn-mek.png"
+            alt="Calculator"
+            class="portfolio__img"
+          />
+        </a>
+
+        <a
+          href="https://codepen.io/Nockiest/pen/VwBoQXb"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/8PCHVvsk/V-st-i-ekparlax.png"
+            alt="Parlax"
+            class="portfolio__img"
+          />
+        </a>
+        <a
+          href="https://www.figma.com/file/MY7Si5qwMncDSkElYkzy37/Untitled?type=design&node-id=0-1&mode=design&t=xgWhm8JyxEKwyA7W-0"
+          class="portfolio__item"
+        >
+          <img
+            src="https://i.postimg.cc/G3gnz7Fw/figma-design-example.png"
+            alt="Parlax"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- take the affiliate section and add it here-->
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:ondralukes06@seznam.cz" class="footer__link"
+        >Send me a message</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/Nockiest">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/ondrejovy_snidane/"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.youtube.com/channel/UCyHXnWQWCdoPa5-pMa09zoA"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://discord.gg/6bYUpkv6">
+            <i class="fab fa-discord"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
