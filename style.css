@@ -88,7 +88,7 @@ strong {
 .btn:hover {
   transform: scale(1.1);
 }
-
+ 
 /* Typography */
 
 h1,
@@ -379,6 +379,23 @@ header {
     position: relative;
     z-index: 2;
   }
+}
+
+/* CTA */
+.CTA{
+   
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+   
+    padding : 1em auto;  
+}
+.fiver-btn {
+  padding: 0.2em 2em;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin:0px auto;
+  font-weight:800;
 }
 
 /* My Work */
