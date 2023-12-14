@@ -7,8 +7,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: 'Lora', serif;
-  --ff-secondary: 'Roboto Slab', serif;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
 
   --fw-reg: 400;
   --fw-bold: 700;
@@ -88,7 +88,7 @@ strong {
 .btn:hover {
   transform: scale(1.1);
 }
- 
+
 /* Typography */
 
 h1,
@@ -235,7 +235,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -269,8 +269,8 @@ header {
     margin: 0 auto;
     grid-column-gap: 1em;
     grid-template-areas:
-      'img title'
-      'img subtitle';
+      "img title"
+      "img subtitle";
     grid-template-columns: min-content max-content;
   }
 
@@ -309,7 +309,7 @@ header {
 }
 
 .section__title--services::after {
-  content: '';
+  content: "";
   display: block;
   width: 2em;
   height: 1px;
@@ -354,9 +354,9 @@ header {
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
-      'title img'
-      'subtitle img'
-      'text img';
+      "title img"
+      "subtitle img"
+      "text img";
     grid-column-gap: 2em;
   }
 
@@ -382,20 +382,19 @@ header {
 }
 
 /* CTA */
-.CTA{
-   
+.CTA {
   display: flex;
   justify-content: center;
   margin: 1em;
-   
-    padding : 1em auto;  
+
+  padding: 1em auto;
 }
 .fiver-btn {
   padding: 0.2em 2em;
   letter-spacing: 1px;
   font-size: 1.5rem;
-  margin:0px auto;
-  font-weight:800;
+  margin: 0px auto;
+  font-weight: 800;
 }
 
 /* My Work */
@@ -408,30 +407,98 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  row-gap: 50px
 }
+
+
 
 .portfolio__item {
-  background: var(--clr-accent);
+  width: 360px;
+  max-height: 360px; /*Fixed height for non-hovered state */
+  gap:0px;
+  background: black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transition: max-height 0.6s ease-in-out, z-index 0.3s ease-in-out;
   overflow: hidden;
+  padding: 16px 8px;
 }
-
-.portfolio__img {
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .portfolio__item:focus {
   position: relative;
   z-index: 2;
 }
-
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+.portfolio__item:hover {
+  max-height: 1000px;
+  z-index: 1; /* Bring the hovered item to the front */
+}
+
+.portfolio__title {
+  background: var(--clr-accent);
+  padding: 12px 16px;
+  background: var(--clr-accent);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+.portfolio__title > h6 {
+  color: var(--clr-light);
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  line-height: 0.5rem;
+  margin-top: 0px;
+}
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  object-fit: cover;
+   height: 200px;
+  width: 100%;
+
+}
+
+.portfolio__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+}
+
+.portfolio__description {
+  padding: 8px; /* Add padding to the description */
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: justify;
+
+}
+
+.portfolio__description::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.portfolio__description::-webkit-scrollbar-thumb {
+  background-color: white; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  margin-left: 4px; /* Add margin to the left of the scrollbar thumb */
+}
+
+.portfolio__description::-webkit-scrollbar-track {
+  background-color: #333; /* Color of the scrollbar track */
+  margin-left: 4px; /* Add margin to the left of the scrollbar track */
 }
 /* footer */
 
@@ -526,5 +593,3 @@ img {
 h2 {
   border-bottom: 6px solid #111;
 }
- 
- 
