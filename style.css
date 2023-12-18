@@ -406,9 +406,14 @@ header {
 }
 
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  row-gap: 50px
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); */
+  row-gap: 50px;
+
+  /* Center the content when there is only one row */
+  justify-content: center;
+  align-content: center;
 }
 
 
