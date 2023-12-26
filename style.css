@@ -64,6 +64,9 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+a {
+  color: black"
+}
 :focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
